@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>微信</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="sm.min.css"/>
+		
+		<style type="text/css">
+			#btn-title{
+				width: 40%;
+				margin: 0 auto;
+			}
+			#msg-page,#ad-page,#dt-page{
+				transform: none !important;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="page-group">
+			
+			<!--消息页面-->
+			<div class="page page-current" id="msg-page">
+				<!--导航栏-->
+				<header class="bar bar-nav">
+					<a href="" class="icon icon-me pull-left"></a>
+					<button class="button button-link pull-right"><b>＋</b></button>
+					<div id="btn-title" class="buttons-row">
+						<a href="" class="tab-link button active">消息</a>
+						<a href="" class="tab-link button">电话</a>
+					</div>					
+				</header>
+				<!--工具栏-->
+				<nav class="bar bar-tab">
+					<a href="" class="tab-item active">
+						<span class="icon icon-message"></span>
+						<span class="tab-label">消息</span>
+						<span class="badge">...</span>
+					</a>
+					<a href="#ad-page" class="tab-item">
+						<span class="icon icon-friends"></span>
+						<span class="tab-label">联系人</span>
+					</a>
+					<a href="#dt-page" class="tab-item">
+						<span class="icon icon-star"></span>
+						<span class="tab-label">动态</span>
+					</a>
+				</nav>
+				<!--内容区-->
+				<div class="content">
+					<div class="content-block">
+						这里是好友列表
+					</div>
+				</div>
+								
+			</div>
+			
+			<!--联系人页面-->
+			<div class="page" id="ad-page">
+				<header class="bar bar-nav">
+					<a href="" class="icon icon-me pull-left"></a>
+	                <button class="button button-link button-nav pull-right">添加</button>
+					<h1 class="title">联系人</h1>					
+				</header>
+				
+				<nav class="bar bar-tab">
+					<a href="#msg-page" class="tab-item">
+						<span class="icon icon-message"></span>
+						<span class="tab-label">消息</span>
+					</a>
+					<a href="" class="tab-item active">
+						<span class="icon icon-friends"></span>
+						<span class="tab-label">联系人</span>
+					</a>
+					<a href="#dt-page" class="tab-item">
+						<span class="icon icon-star"></span>
+						<span class="tab-label">动态</span>
+					</a>
+				</nav>
+				
+				<div class="content">
+					<div class="content-block">
+						这里是联系人页面
+					</div>
+				</div>
+			</div>
+			
+			<!--动态界面-->
+			<div class="page" id="dt-page">
+				<header class="bar bar-nav">
+					<a href="" class="icon icon-me pull-left"></a>
+					<button class="button button-link button-nav pull-right">更多</button>
+					<h1 class="title">动态</h1>					
+				</header>
+				
+				<nav class="bar bar-tab">
+					<a href="#msg-page" class="tab-item">
+						<span class="icon icon-message"></span>
+						<span class="tab-label">消息</span>
+					</a>
+					<a href="#ad-page" class="tab-item">
+						<span class="icon icon-friends"></span>
+						<span class="tab-label">联系人</span>
+					</a>
+					<a href="" class="tab-item active">
+						<span class="icon icon-star"></span>
+						<span class="tab-label">动态</span>
+					</a>
+				</nav>
+				
+				<div class="content">
+					<div class="content-block">
+						这里是动态页面
+					</div>
+				</div>
+			</div>
+			
+			<!--侧栏-->
+			<div class="panel panel-left" id="info-panel">
+				<div class="content-block">
+					<p>这是侧边栏</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script src="zepto.min.js"></script>
+	<script src="sm.min.js"></script>
+	
+	<script type="text/javascript">
+		
+//		URL中第一个#后面的字符串是url的哈希值。hash值不会随请求发送到服务器，仅仅是指导浏览器当页面加载完成时
+//      显示页面的哪个部分。
+//      window.location.hash可以访问当前页面hash值
+//      window.onhashchange事件可以监听hash的变化
+		
+		$(document).on("pageInit","#msg-page",function(e,pageId,$page){
+				    document.title = "消息";
+		});
+		
+		$(document).on("pageInit","#ad-page",function(e,pageId,$page){
+				    document.title = "联系人";
+		});
+		
+		$(document).on("pageInit","#dt-page",function(e,pageId,$page){
+				    document.title = "动态";
+		});
+		
+		
+		//初始化
+		$.init();
+	</script>
+</html>
