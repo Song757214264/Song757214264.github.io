@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/goods.css"/>
+	</head>
+	<body ng-app="goods" ng-controller="ctrl">
+		<header>
+			<div id="header">
+				<div id="logo"></div>
+				<div id="logo-sale"></div>
+			</div>
+		</header>
+		<main>
+			<p id="back-index"><a href="index.html">返回首页</a></p>
+			<div>
+				<div id="img-block">
+					<img src="img/{{goodsObj.back}}.jpg"/>
+					<p>
+						<span id="shoucang"></span>收藏宝贝(0人气)
+						<span id="fenxiang"></span>分享
+					</p>
+				</div>
+				<div id="describe-block">
+					<h2>{{goodsObj.describe}}</h3>
+					<div id="price-sale">
+						<p>原价:<span id="old-price">{{goodsObj.old}}</span></p>
+						<p>现价:<span id="now-peice">￥{{goodsObj.current}}</span></p>
+					</div>
+					<div id="buy-price">
+						<p>数量:
+							<div id="input-box">
+								<input id="minusBtn" ng-click="minus()" type="button" value="-"/>
+								<div id="numBtn">{{numbe}}</div>
+								<input id="addBtn" ng-click="add()" type="button" value="+"/>
+							</div>
+						</p>
+						<p style="padding: 10px;">总计:<span id="total-price">￥{{goodsObj.current*numbe}}</span></p>
+					</div>
+					<input type="button" id="buy-button" value="立即购买"/>
+					<input type="button" id="shop-car" value="加入购物车" />
+				</div>
+			</div>
+			<script src="libs/jquery.min.js"></script>
+			<script src="libs/jquery.cookie.js"></script>
+			<script src="libs/angular.min.js"></script>
+			<script src="js/goods.js"></script>
+		</main>
+	</body>
+</html>

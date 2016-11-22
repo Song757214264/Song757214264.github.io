@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F6F6F6;
+	font-family: "宋体";
+}
+header{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-bottom: 4px solid #FF464E;
+}
+header #header{
+	position: relative;
+	width: 980px;
+	height: 76px;
+	margin: 0 auto;
+}
+#logo{
+	background-image: url(../img/header-total.gif);
+	width: 210px;
+	height: 56px;
+	position: absolute;
+	background-position: -78px -217px;
+	top: 15px;
+	left: 0;
+	cursor: pointer;
+}
+#logo-sale{
+	background-image: url(../img/header-total.gif);
+	width: 465px;
+	height: 33px;
+	background-position: 0 0;
+	position: absolute;
+	top: 24px;
+	right: 10px;
+	cursor: pointer;
+}
+main{
+	width: 980px;
+	height: 530px;
+	margin: 20px auto;
+	color: #666;
+	background-color: #fff;
+	border: 1px solid #e2e2e2;
+	position: relative;
+}
+main #back-index{
+	border-bottom: 1px solid #E2E2E2;
+	padding: 20px 0 20px 50px;
+	font-size: 24px;
+}
+main #back-index a:hover{
+	text-decoration: underline;
+	color: #FF464E;
+}
+main #back-index a{
+	text-decoration: none;
+	color: #FF464E;
+}
+#img-block{
+	margin: 20px 0 20px 20px;
+	width: 310px;
+}
+#img-block p{
+	margin: 10px 0;
+	font-size: 14px;
+	height: 16px;
+	line-height: 14px;
+}
+#img-block #shoucang{
+	background-image: url(../img/shoucang.png);
+	background-position: -120px 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#img-block #fenxiang{
+	background-image: url(../img/shoucang.png);
+	background-position: -100px 1px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 5px;
+}
+#describe-block{
+	position: absolute;
+	top: 90px;
+	left: 450px;
+	border: 1px solid #E2E2E2;
+	width: 400px;
+	height: 400px;
+}
+#describe-block h2{
+	color: black;
+}
+#describe-block p{
+	margin: 10px 0;
+}
+#price-sale{
+	background-color: #fff2e8;
+}#price-sale p:nth-of-type(1){
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+#price-sale #old-price{
+	text-decoration: line-through;
+}
+#price-sale p:nth-of-type(2){
+	padding: 10px 0 10px 10px;
+	font-size: 14px;
+}
+#price-sale #now-peice{
+	color: #FF464E;
+	font-size: 20px;
+}
+#buy-price p:nth-of-type(1){
+	padding: 10px 10px 0 10px;
+	display: inline-block;
+}
+#buy-price input{
+	border: none;
+}
+#buy-price input[type=button]{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+#buy-price #numBtn{
+	display: inline-block;
+	width: 30px;
+	height: 25px;
+	text-align: center;
+}
+#buy-price #input-box{
+	display: inline-block;
+	border: 1px solid #E2E2E2;
+}
+#buy-price #total-price{
+	font-size: 30px;
+	color: #FF464E;
+}
+#buy-button{
+	width: 80px;
+	height: 40px;
+	background-color: #FFF2E8;
+	margin-left: 10px;
+	cursor: pointer;
+	border: 1px solid #E2E2E2;
+}
+#shop-car{
+	width: 120px;
+	height: 40px;
+	background-color: orangered;
+	margin-left: 20px;
+	cursor: pointer;
+	border: 1px solid #E2E2E2;
+}

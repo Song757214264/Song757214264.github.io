@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body ng-app="myLogin" ng-controller="ctrl">
+		<header>
+			<div id="header">
+				<div id="logo"></div>
+				<div id="logo-sale"></div>
+			</div>
+		</header>
+		<main>
+			<div id="title">
+				<span id="new-user">老用户登录</span><span id="xie"></span><span id="gift">尊敬的卷皮用户，欢迎您回来！</span>
+				<p>还没账号？<a href="">立即去注册</a></p>
+			</div>
+			
+			<div id="login">
+				<form id="form" ng-submit="submit()" name="myForm" novalidate>
+					<div class="label-input">
+						<div id="input-block">
+							<div id="name2"></div>
+							<input required ng-minlength="1"  type="text" name="tel" ng-model="tel" placeholder="手机号/邮箱/昵称" autocomplete="off"/>
+						</div>
+						<p ng-show="myForm.tel.$invalid&&myForm.tel.$dirty">账号不能为空</p>
+					</div>
+					<div class="label-input">
+						<div id="input-block">
+							<div id="code2"></div>
+							<input required type="password" ng-minlength="1" name="psw" ng-model="psw" placeholder="密码" autocomplete="off"/>
+						</div>
+						<p ng-show="myForm.psw.$invalid&&myForm.psw.$dirty">密码不能为空</p>
+					</div>
+					<div id="protocol">
+						<input type="checkbox" checked/>两周内免登陆<a href="">忘记密码？</a>
+					</div>
+					<div style="clear: both;"></div>
+					<input id="submit" type="submit" value="登录"/>
+				</form>
+			</div>
+			<div style="clear: both;"></div>
+			<div id="fast-login">
+				<p>合作网站账号登录</p>
+				<a href="" id="qq"></a>
+				<a href="" id="weixin"></a>
+				<a href="" id="weibo"></a>
+				<a href="" id="taobao"></a>
+			</div>
+			<div id="tel-login">
+				<span></span>
+				<a href="">手机快捷登录>></a>
+			</div>				
+	
+			<div id="regist-right">
+				<img src="img/login-bj-ad.png"/>
+			</div>
+		</main>
+		<footer>武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B1-20150109 | 食品流通许可证 SP4201991510041888 Copyright © 2010 - 2016 JuanPi.com All Rights Reserved</footer>
+	</body>
+	
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="js/login.js"></script>
+</html>
+		

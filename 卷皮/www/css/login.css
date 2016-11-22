@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F6F6F6;
+	font-family: "宋体";
+}
+header{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-bottom: 4px solid #FF464E;
+}
+header #header{
+	position: relative;
+	width: 980px;
+	height: 76px;
+	margin: 0 auto;
+}
+#logo{
+	background-image: url(/img/header-total.gif);
+	width: 210px;
+	height: 56px;
+	position: absolute;
+	background-position: -78px -217px;
+	top: 15px;
+	left: 0;
+	cursor: pointer;
+}
+#logo-sale{
+	background-image: url(/img/header-total.gif);
+	width: 465px;
+	height: 33px;
+	background-position: 0 0;
+	position: absolute;
+	top: 24px;
+	right: 10px;
+	cursor: pointer;
+}
+main{
+	width: 980px;
+	height: 530px;
+	margin: 20px auto;
+	color: #666;
+	background-color: #fff;
+	border: 1px solid #e2e2e2;
+	position: relative;
+}
+#title{
+	width: 878px;
+	padding: 20px 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #E2E2E2;
+}
+#new-user{
+	color: #FF464E;
+	font-size: 16px;
+	font-family: "微软雅黑","宋体";
+	margin-left: 10px;		
+	padding-right: 5px;
+	float: left;
+}
+#xie{
+	background-image: url(/img/hd-bg.gif);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding: 0 5px;
+}
+#gift{
+	color: #666;
+	float: left;
+	margin-top: 3px;
+	font-size: 12px;		
+}
+#title p{
+	float: right;
+	font-size: 14px;
+	color: #999;
+}
+#title p a{
+	color: #0289CD;
+	text-decoration: none;
+	cursor: pointer;
+}
+#title p a:hover{
+	text-decoration: underline;
+}
+#login{
+	padding: 30px 160px 0 160px;
+}
+input{	
+	color: #666;
+	border: none;
+	padding: 12px 0 12px 10px;
+	height: 14px;
+	line-height: 14px;
+	width: 226px;
+	float: left;
+	display: inline-block;
+}
+#name2{
+	background-image: url(/img/name2.jpg);
+	width: 39px;
+	height: 38px;
+	float: left;
+	display: inline-block;
+}
+#code2{
+	background-image: url(/img/code2.jpg);
+	width: 39px;
+	height: 38px;
+	float: left;
+}
+.label-input{			
+	position: relative;
+	padding-bottom: 25px;
+	position: relative;
+	height: 45px;
+	overflow: visible;
+	clear: both;
+	font-size: 12px;
+}
+#input-block{
+	border: 1px solid #C6C6C6;
+	width: 275px;
+	height: 40px;
+}
+#login p{
+	width: 330px;
+	height: 16px;
+	overflow: visible;
+	position: absolute;
+	top: 42px;
+	left: 10px;
+	color: #FF464E;
+	font-size: 12px;
+}
+#submit{
+	background-image: url(/img/new-login.gif);
+	background-position: 0 -45px;
+	color: #fff;
+	cursor: pointer;
+	height: 40px;
+	width: 275px;
+	font-size: 16px;
+	border-radius: 2px;
+	border: none;
+	margin-top: 5px;
+}
+#protocol{
+	clear: both;
+	float: left;
+	width: 275px;
+	color: #666;
+	font-size: 12px;
+	padding-bottom: 20px;
+	height: 20px;
+	position: relative;
+	left: 0;
+	top: 20px;
+}
+#protocol input{
+	width: 14px;
+	height: 14px;
+}
+#protocol a{
+	text-decoration: none;
+	color: #999;
+	float: right;
+}
+#protocol a:hover{
+	text-decoration: underline;
+}
+#fast-login{
+	width: 142px;
+	float: left;
+	color: #666;
+	font-size: 12px;
+	margin: 30px 0 0px 160px;
+}
+#fast-login a{
+	background-image: url(/img/new-login.gif);
+	width: 22px;
+	height: 22px;
+	margin-right: 7px;
+	float: left;
+}
+#fast-login p{
+	margin-bottom: 10px;
+}
+#qq{
+	background-position: right -166px;
+}
+#qq:hover{
+	background-position: right -140px;
+}
+#weixin{
+	background-position: -236px -194px;
+}
+#weixin:hover{
+	background-position: -210px -194px;
+}
+#weibo{
+	background-position: -27px -169px;
+}
+#weibo:hover{
+	background-position: 0 -169px;
+}
+#taobao{
+	background-position: -27px -140px;
+}
+#taobao:hover{
+	background-position: 0 -140px;
+}
+#tel-login{
+	margin-top: 40px;
+}
+#tel-login span{
+	background-image: url(/img/icons-total.gif);
+	background-position: right -249px;
+	margin: 0 5px 0 0;
+	display: block;
+	width: 12px;
+	height: 22px;
+	float: left;
+}
+#tel-login a{
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+}
+#tel-login a:hover{
+	text-decoration: underline;
+}
+#regist-right{
+	position: absolute;
+	top: 90px;
+	right: 80px;
+}
+footer{
+	width: 900px;
+	text-align: center;
+	margin: 40px auto;
+	color: #666666;
+	font-size: 12px;
+}

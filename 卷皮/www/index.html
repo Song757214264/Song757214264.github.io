@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body ng-app="juanPi" ng-controller="ctrl">
+		<nav>
+			<div id="nav">
+				<div>
+					<a class="underline" href="login.html"><span id="user-login">登录</span></a>
+					<a class="underline" href="regist.html"><span style="color: red;">免费注册</span></a>|
+					<a class="underline" href=""><span>我的订单</span></a>|
+					<a href="" id="shopping-bag" ng-mouseover="showBlock()" ng-mouseleave="hideBlock()">
+						<span id="small-shop"></span><span>购物袋</span><span id="zero">0</span>
+						<div id="hide-login" ng-mouseover="showBlock()" ng-mouseleave="hideBlock()"><span id="big-shop"></span><p>好像还没有<a style="color: #3399CC;" href="login.html">登录</a><span id="o">哦~</span></p></div>
+					</a>
+					<span style="margin: 0;color: #e8e2e8;">|</span>
+					
+					<span  class="underline" id="shangjia">商家中心
+						<div id="hide-shangjia">
+							<a class="underline" href="">供应商平台</a><br />
+							<a class="underline" href="">导购平台</a>
+						</div>
+					</span>
+					<span  class="underline" id="kefu">客户服务
+						<div id="hide-kehu">
+							<a class="underline" href="">帮助中心</a><br />
+							<a class="underline" href="">联系客服</a>
+						</div>
+					</span>
+					
+				</a>
+			</div>
+		</nav>
+		<header>
+			<div id="header">
+				<div id="logo"></div>
+				<div id="logo-sale"></div>
+				<div id="search">
+					<span><input type="text" id="keywords" autocomplete="off" placeholder="请输入想找的宝贝"/></span>
+				    <div id="submit-search"/></div>
+				</div>
+				<ul>
+					<li><a class="underline" href="" style="color: white;">最新折扣</a></li>
+					<li><a class="underline" href="">品牌折扣</a></li>
+					<li><a class="underline" href="">特卖精选</a></li>
+					<li><a class="underline" href="">9.9包邮</a></li>
+					<li><a class="underline" href="">即将上线</a></li>
+					<li><a class="underline" href=""><span id="mobile-picture"></span>手机版</a></li>
+				</ul>
+				<a id="sign">
+					<span id="sign-in"></span>
+					<span  class="underline">签到领积分</span>
+				</a>
+			</div>
+		</header>
+		<main>
+			<div id="discount-list">
+				<dl>
+					<dd><a href=""><span class="discount nvzhuang"></span>女装<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount nanzhuang"></span>男装</a></dd>
+					<dd><a href=""><span class="discount xiezi"></span>鞋子<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount xiangbao"></span>箱包</a></dd>
+					<dd><a href=""><span class="discount muying"></span>母婴<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount meizhuang"></span>美妆</a></dd>
+					<dd><a href=""><span class="discount jujia"></span>居家<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount jiafang"></span>家纺</a></dd>
+					<dd><a href=""><span class="discount wenti"></span>文体<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount meishi"></span>美食</a></dd>
+					<dd><a href=""><span class="discount shuma"></span>数码<span class="discount-vertical">|</span></a></dd>
+					<dd><a href=""><span class="discount dianqi"></span>电器</a></dd>
+					<dd><a href=""><span class="discount neiyi"></span>内衣<span class="discount-vertical">|</span></a></dd>
+					<dd style="border-bottom: none;"><a href=""><span class="discount peishi"></span>配饰</a></dd>
+				</dl>
+			</div>
+			
+			<a id="carousel">
+				<div id="img-box">
+					<img id="pic1" src="img/carousel1.jpg" alt="" style="display: block;"/>
+					<img id="pic2" src="img/carousel2.jpg" alt="" style="display: none;"/>
+					<img id="pic3" src="img/carousel3.jpg" alt="" style="display: none;"/>
+					<img id="pic4" src="img/carousel4.jpg" alt="" style="display: none;"/>
+					<img id="pic5" src="img/carousel5.jpg" alt="" style="display: none;"/>
+				</div>
+				<div id="point-box">
+					<span class="point"></span>
+					<span class="point"></span>
+					<span class="point"></span>
+					<span class="point"></span>
+					<span class="point"></span>
+				</div>
+				<div id="left"><span id="left-mark"></span></div>
+				<div id="right"><span id="right-mark"></span></div>
+			</a>
+			
+			<div id="discount-pic">
+				<dl>
+					<dd><a href=""><img src="img/1.jpg"/></a></dd>
+					<dd><a href=""><img src="img/2.jpg"/></a></dd>
+					<dd><a href=""><img src="img/3.jpg"/></a></dd>
+					<dd><a href=""><img src="img/4.jpg"/></a></dd>
+					<dd><a href=""><img src="img/5.jpg"/></a></dd>
+				</dl>
+			</div>	
+			
+			<div id="today-brand">
+				<div id="brand">
+					<i></i>今日品牌
+				</div>
+				<ul>
+					<li><a href=""><span>品牌女装</span><i></i></a></li>
+					<li><a href=""><span>品牌母婴</span><i></i></a></li>
+					<li><a href=""><span>品质居家</span><i></i></a></li>
+					<li><a href=""><span>全部品牌</span><i></i></a></li>
+				</ul>
+			</div>
+			
+			<div id="brand-list">
+				<ul id="sale-list">
+					<li>
+						<div class="brand brand1">
+							<img src="img/brand1.jpg" alt="" />
+							<p><span></span>{{shicha}}</p>
+						</div>
+						<div class="brand-discount"><span>1折起</span><a>进入活动</a></div>
+					</li>
+					<li>
+						<div class="brand brand2">
+							<img src="img/brand2.jpg" alt="" />
+							<p><span></span>{{shicha}}</p>
+						</div>
+						<div class="brand-discount"><span>0.8折起</span><a>进入活动</a></div>
+					</li>
+					<li>
+						<div class="brand brand3">
+							<img src="img/brand3.jpg" alt="" />
+							<p><span></span>{{shicha}}</p>
+						</div>
+						<div class="brand-discount"><span>0.7折起</span><a>进入活动</a></div>
+					</li>
+				</ul>
+				<ul id="sale-logo">
+					<li>更多品牌特卖:</li>
+					<li><img src="img/sale1.png"/></li>
+					<li><img src="img/sale2.png"/></li>
+					<li><img src="img/sale3.png"/></li>
+					<li><img src="img/sale4.png"/></li>
+					<li><img src="img/sale5.png"/></li>
+					<li><img src="img/sale6.png"/></li>
+					<li><img src="img/sale7.png"/></li>
+					<li><img src="img/sale8.png"/></li>
+					<li>查看全部》</li>
+				</ul>
+			</div>
+			
+			<div id="today-new">
+				<div id="new">
+					<i></i>今日新品
+					<span>每天10点上新</span>
+				</div>
+			</div>
+			
+			<ul id="new-list">
+				<li ng-repeat="data in shoplist">
+					<img id="back-pic" src="img/{{data.back}}.jpg" alt="" />
+					<img id="left-logo" src="img/{{data.left}}.png" alt=""></img>
+					<span id="heart-circle"><span id="heart"></span></span>
+					<h3><span id="postage">{{data.postage}}</span><a href="">{{data.describe}}</a><span id="top-new">上新</span></h3>
+					<div id="bottom-price">
+						<em>￥</em><span id="current-price">{{data.current}}</span><span id="old-price">{{data.old}}</span><span id="price-discount">{{data.discount}}</span>
+						<div id="logo-name">
+							<span id="shop-logo" style="background-position: {{data.logo}};"></span>
+							<span id="shop-name">{{data.name}}</span>
+						</div>
+						<a style="cursor: pointer;" id="click-block" ng-click="goodsClick()">{{data.where}}</a>
+					</div>
+				</li>
+				<div style="clear: both;"></div>
+			</ul>
+			
+			<div id="page-list">
+				<a id="pre-page">上一页</a>
+				<a id="page-one">1</a>
+				<a class="hover-red" href="">2</a>
+				<a class="hover-red" href="">3</a>
+				<a id="page-point" href="">...</a>
+				<a class="hover-red" href="">26</a>
+				<a class="hover-red" id="next-page" href="">下一页</a>
+			</div>			
+		</main>
+		
+		<footer>
+			<div id="footer-box">
+				<div id="code">
+					<img src="img/jp-app-90.png"/>
+					<p>随时逛及时抢</p>
+				</div>
+				
+				<dl>
+					<dt>获得更新</dt>
+					<dd><span class="footer-point"></span><a href="">iPhone/Android</a></dd>
+					<dd><span class="footer-point"></span><a href="">卷皮QQ空间</a></dd>
+					<dd><span class="footer-point"></span><a href="">卷皮新浪微博</a></dd>
+					<dd><span class="footer-point"></span><a href="">开发API</a></dd>
+				</dl>
+				<dl>
+					<dt>商务合作</dt>
+					<dd><span class="footer-point"></span><a href="">卖家免费报名</a></dd>
+					<dd><span class="footer-point"></span><a href="">商家入驻</a></dd>
+					<dd><span class="footer-point"></span><a href="">廉政邮箱</a></dd>
+					<dd><span class="footer-point"></span><a href="">开放平台</a></dd>
+				</dl>
+				<dl>
+					<dt>公司信息</dt>
+					<dd><span class="footer-point"></span><a href="">关于卷皮</a></dd>
+					<dd><span class="footer-point"></span><a href="">媒体报道</a></dd>
+					<dd><span class="footer-point"></span><a href="">诚聘英才</a><img id="school" src="img/school-ico.png"/></dd>
+					<dd><span class="footer-point"></span><a href="">校园经理招募</a></dd>
+				</dl>
+				<dl>
+					<dt>帮助中心</dt>
+					<dd><span class="footer-point"></span><a href="">新手上路</a></dd>
+					<dd><span class="footer-point"></span><a href="">积分攻略</a></dd>
+					<dd><span class="footer-point"></span><a href="">网站地图</a></dd>
+				</dl>
+				<div id="footer-kefu">
+					<a href=""></a>
+					<div>
+						<p>周一至周日</p>
+						<p>9:00-21:00</p>
+					</div>					
+				</div>
+				<div style="clear: both;"></div>
+				
+				<div id="links">
+					<span>友情链接:</span>
+					<a href="">国画</a>
+					<a href="">齐家装修</a>
+					<a href="">易登网</a>
+					<a href="">普洱茶</a>
+					<a href="">中关村商城</a>
+					<a href="">品牌鞋</a>
+					<a href="">乐蜂网优惠券</a>
+					<a href="">精选折扣</a>
+					<a href="">拍鞋网官网</a>
+					<a id="link-more" href="">更多>></a>
+				</div>
+				
+				<p id="footer-reserve">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B1-20150109 | 食品流通许可证 SP4201991510041888　　Copyright © 2010 -2016 JuanPi.com All Rights Reserved </p>
+				
+				<div id="footer-logo">
+					<a href=""><img src="img/r_315new.gif"/></a>
+					<a href=""><img src="img/r_cnnic.gif"/></a>
+					<a href=""><img src="img/r_gongshang.gif"/></a>
+					<a href=""><img src="img/sm_124x47.png"/></a>
+				</div>
+			</div>
+		</footer>
+		
+		<aside>
+			<ul id="first-ul">
+				<li id="side-user" ng-mousemove="peor()" ng-mouseleave="peol()">
+					<div id="side-big-peo">
+						<a id="side-peo" href=""></a>
+					</div>				
+					<div id="hide-peo">
+						<p>
+							快来<a href="">登录</a>吧
+							<span>◆</span>
+						</p>
+					</div>
+				</li>
+				<li id="side-shop">
+					<a href="">
+						<span id="shop-bag"></span>
+						<span id="shop-zero">0</span>
+					</a>
+				</li>
+				<li id="side-heart" ng-mousemove="heartr()" ng-mouseleave="heartl()">
+					<a href="">
+						<span></span>
+					</a>
+					<div id="hide-heart">
+						<p>我的收藏</p>
+						<span>◆</span>
+					</div>
+				</li>
+				<li id="side-money" ng-mousemove="moneyr()" ng-mouseleave="moneyl()">
+					<a href="">
+						<span></span>
+					</a>
+					<div id="hide-money">
+						<p>我的优惠券</p>
+						<span>◆</span>
+					</div>
+				</li>
+			</ul>
+			<ul id="second-ul">
+				<li id="side-pen" ng-mousemove="penr()" ng-mouseleave="penl()">
+					<a href="">
+						<span></span>
+					</a>
+					<div id="hide-pen">
+						<p>意见反馈</p>
+						<span>◆</span>
+					</div>
+				</li>
+				<li id="side-ma" ng-mousemove="mar()" ng-mouseleave="mal()">
+					<a href="">
+						<span></span>
+					</a>
+					<div id="hide-ma">
+						<div id="erweima"></div>
+						<p>随时逛 及时抢</p>
+						<span>◆</span>
+					</div>
+				</li>
+				<li id="side-top" ng-mousemove="topr()" ng-mouseleave="topl()">
+					<a href="javascript:scroll(0,0)">
+						<span></span>
+					</a>
+					<div id="hide-top">
+						<p>返回顶部</p>
+						<span>◆</span>
+					</div>
+				</li>	
+			</ul>
+		</aside>
+		
+	</body>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery.cookie.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="js/index.js"></script>
+	
+</html>
